@@ -104,23 +104,29 @@
                 <div class="header__inner">
                     <!-- Logo -->
                     <div class="logo">
-                        <img
-                            src="./asset/icon/logo.svg"
-                            alt="Logo"
-                            class="logo__img"
-                        />
-                        <img
-                            src="./asset/icon/celobank.svg"
-                            alt="CeloBank"
-                            class="brand-name"
-                        />
+                        <a href="#!" class="logo__wrap">
+                            <img
+                                src="./asset/icon/logo.svg"
+                                alt="Logo"
+                                class="logo__img"
+                            />
+                            <img
+                                src="./asset/icon/celobank.svg"
+                                alt="CeloBank"
+                                class="brand-name"
+                            />
+                        </a>
                     </div>
 
                     <!-- Navbar -->
-                     <nav class="navbar">
+                    <nav class="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link navbar__link--active">Home</a>
+                                <a
+                                    href="#!"
+                                    class="navbar__link navbar__link--active"
+                                    >Home</a
+                                >
                             </li>
                             <li class="navbar__item">
                                 <a href="#!" class="navbar__link">Products</a>
@@ -132,19 +138,90 @@
                                 <a href="#!" class="navbar__link">Blog</a>
                             </li>
                         </ul>
-                     </nav>
+                    </nav>
 
                     <!-- Action -->
-                     <div class="header__action">
+                    <div class="header__action">
                         <a href="#!" class="header__action-link">Log in</a>
                         <button class="btn header_action-btn">Sign up</button>
-                     </div>
+                    </div>
                 </div>
             </div>
         </header>
 
         <!-- Hero -->
-        <section class="hero"></section>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <p class="section-title">Digital Smart Wallet</p>
+                        <h1 class="hero__heading">
+                            Digital
+                            <span class="hero__heading--purple">Payment</span>
+                            For Everyone.
+                        </h1>
+                        <p class="section-desc">
+                            We bring together everything that’s required to
+                            build websites and apps that accept payments and
+                            send payouts globally. We are the best platform.
+                        </p>
+                        <form action="" class="subscribe__form">
+                            <input
+                                type="text"
+                                class="subscribe__input"
+                                placeholder="Your email address"
+                            />
+                            <button type="submit" class="btn subscribe__submit">
+                                Get Started
+                            </button>
+                        </form>
+
+                        <p class="hero__note">
+                            *We’ll respect the inbox and never share your email.
+                        </p>
+                    </div>
+                    <div class="hero__media">
+                        <!-- Mobile screen -->
+                        <figure class="hero__img-wrap">
+                            <img
+                                src="./asset/img/mobile-screen.png"
+                                alt=""
+                                class="hero__screen"
+                            />
+                        </figure>
+                        <!-- Deposit -->
+                        <div class="hero__deposit">
+                            <img
+                                src="./asset/icon/arrow-down.svg"
+                                alt=""
+                                class="hero__deposit-icon"
+                            />
+                            <span class="hero__deposit-text">Deposit</span>
+                            <span class="hero__deposit-amount">$32000</span>
+                        </div>
+                        <!-- Interest -->
+                        <div class="hero__interest">
+                            <span class="hero__interest-percentage">0%</span>
+                            <span class="hero__interest-text">Interest</span>
+                        </div>
+                        <!-- Fund -->
+                        <div class="hero__fund">
+                            <img
+                                src="./asset/icon/dollar.svg"
+                                alt=""
+                                class="hero__fund-icon"
+                            />
+                            <div class="hero__fund-body">
+                                <span class="hero__fund-amount">$1.310</span>
+                                <span class="hero__fund-text"
+                                    >SECURED FUNDS</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Main -->
         <main>

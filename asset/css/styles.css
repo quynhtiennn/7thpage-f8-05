@@ -5,7 +5,7 @@
 :root {
     --primary-purple: #7264d6;
     --black: #212832;
-    --gray: #696D76;
+    --gray: #696d76;
 }
 
 html,
@@ -46,12 +46,40 @@ button {
 
     padding: 0px 30px;
     height: var(--height);
-    color: #FFF;
+    color: #fff;
     background: var(--black);
     text-align: center;
     font-weight: 600;
     line-height: 1.75;
     border-radius: 6px;
+}
+
+.section-title {
+    padding-left: 30px;
+    position: relative;
+    color: #696d77;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.section-title::after {
+    margin-bottom: 12px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: var(--gray);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 /* ========== Header ========== */
@@ -61,7 +89,7 @@ button {
     padding: 42px 0px 15px;
 }
 
-.logo {
+.logo__wrap {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -82,7 +110,7 @@ button {
 .navbar__link {
     position: relative;
     padding: 0 23px;
-    color: #696d76;
+    color: var(--gray);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -90,7 +118,7 @@ button {
 
 .navbar__link:hover,
 .navbar__link--active {
-    color: #212832;
+    color: var(--black);
     text-shadow: 1px 0 0 currentColor;
 }
 
@@ -110,18 +138,179 @@ button {
 
 .header__action-link {
     margin-right: 28px;
-    color: #212832;
+    color: var(--black);
     font-weight: 600;
     line-height: 1.75;
 }
 
-.header_action-btn  {
+.header_action-btn {
     --height: 52px;
 
     padding: 0px 28px;
 }
 
 /* ========== Hero ========== */
+.hero {
+    padding: 66px 0px 80px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__heading {
+    color: var(--black);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.hero__heading--purple {
+    color: var(--primary-purple);
+}
+
+.subscribe__form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.subscribe__input {
+    padding-left: 23px;
+    border: none;
+}
+
+.subscribe__input,
+.subscribe__input::placeholder {
+    color: var(--gray);
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.subscribe__submit {
+    background: var(--primary-purple);
+}
+
+.hero__note {
+    margin-top: 20px;
+    color: var(--gray);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.hero__media {
+    width: 51.3%;
+    position: relative;
+}
+
+.hero__img-wrap {
+    width: 100%;
+    margin-left: 100px;
+}
+
+.hero__screen {
+    width: 296px;
+    height: 562px;
+}
+
+.hero__deposit {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__deposit-text {
+    margin: 0px 19px 0 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__deposit-amount {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero__interest {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+}
+
+.hero__interest-percentage {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero__interest-text {
+    color: #fff;
+    font-weight: 400;
+}
+
+.hero__fund {
+    position: absolute;
+    bottom: 61px;
+    right: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero__fund-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__fund-amount {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__fund-text {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
 /* ========== Reward ========== */
 /* ========== Payment ========== */
 /* ========== Anytime ========== */
