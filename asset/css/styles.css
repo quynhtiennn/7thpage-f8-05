@@ -87,6 +87,8 @@ button {
     position: sticky;
     top: -32px;
     padding: 42px 0px 15px;
+    z-index: 9;
+    background: #fff;
 }
 
 .logo__wrap {
@@ -311,7 +313,76 @@ button {
     font-weight: 400;
     line-height: 1;
 }
+
 /* ========== Reward ========== */
+.reward {
+    padding: 80px 0;
+}
+
+.reward__inner {
+    display: flex;
+    align-items: center;
+    gap: 230px;
+}
+
+.reward__media {
+    position: relative;
+    width: 40.17%;
+}
+
+.reward__media-bg {
+    width: 470px;
+    height: 550px;
+}
+
+.reward__img-wrap {
+    position: absolute;
+    bottom: 0;
+}
+
+.reward__img {
+    display: block;
+    margin: 0px auto 2px;
+    width: calc(100% - 14px);
+}
+
+.reward__logo-box {
+    position: absolute;
+    top: 0;
+    right: 62px;
+}
+
+.reward__card {
+    position: absolute;
+    right: -100px;
+    bottom: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.reward__card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.reward__card-heading {
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.reward__card-text {
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 /* ========== Payment ========== */
 /* ========== Anytime ========== */
 /* ========== Feedback ========== */
