@@ -383,12 +383,15 @@ button {
 
 .reward__card-heading {
     color: var(--black);
+    font-family: Inter, sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
 }
 
 .reward__card-text {
+    margin-top: 5px;
     color: var(--gray);
+    font-family: Inter, sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -418,7 +421,116 @@ button {
     font-weight: 400;
     line-height: 1.75;
 }
+
 /* ========== Payment ========== */
+.payment {
+    padding: 80px 0;
+}
+
+.payment__inner {
+    display: grid;
+    grid-template-columns: 40.17% 1fr;
+    align-items: center;
+    gap: 130px;
+}
+
+.payment__list {
+    margin: 28px 0 38px;
+}
+
+.payment__item {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 18px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.payment__item:after {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.payment__media {
+    position: relative;
+}
+
+.payment-money {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    width: 276px;
+    height: 86px;
+    padding: 23px 13px;
+    display: grid;
+    grid-template-columns: 40px 1fr 60px;
+    gap: 14px;
+    align-items: center;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.payment-money__title {
+    color: var(--black);
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.payment-money__sub {
+    color: var(--gray);
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.payment-money__amount {
+    color: var(--black);
+    text-align: right;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+.payment-money__time {
+    color: var(--gray);
+    text-align: right;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.payment-income {
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.payment-income__text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.payment-income__amount {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
 /* ========== Anytime ========== */
 /* ========== Feedback ========== */
 /* ========== Blog ========== */
