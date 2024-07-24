@@ -788,6 +788,76 @@ button {
 .blog-item__cta:hover {
     color: #7264d6;
 }
+
 /* ========== Download ========== */
+.download {
+    margin: 80px 0;
+}
+
+.download__inner {
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    background: #7264d6;
+}
+
+.download__title {
+    color: #fff;
+}
+
+.download__title::after {
+    background: #fff;
+}
+
+.download__heading {
+    color: #fff;
+}
+
+.download__desc {
+    width: 37.17%;
+    margin-top: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.download__list {
+    margin-top: 38px;
+    display: flex;
+    gap: 16px;
+}
+
+.download-google__icon {
+    width: 182px;
+    height: 64px;
+}
+
+.download__decor:nth-of-type(1) {
+    position: absolute;
+    top: 49px;
+    left: 112px;
+}
+
+.download__decor:nth-of-type(2) {
+    position: absolute;
+    top: 49px;
+    right: 112px;
+}
+
+.download__decor:nth-of-type(3) {
+    position: absolute;
+    bottom: 49px;
+    left: 166px;
+}
+
+.download__decor:nth-of-type(4) {
+    position: absolute;
+    bottom: 49px;
+    right: 166px;
+}
 /* ========== Footer ========== */
 /* ========== ========== */
