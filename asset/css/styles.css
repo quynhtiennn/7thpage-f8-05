@@ -537,6 +537,7 @@ button {
 
 /* ========== Anytime ========== */
 .anytime {
+    padding: 80px 0;
 }
 
 .anytime__inner {
@@ -593,7 +594,122 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 18px;
 }
+
 /* ========== Feedback ========== */
+.feedback {
+    padding: 80px 0;
+}
+
+.feedback__title {
+    width: 150px;
+}
+.feedback__heading {
+    text-align: center;
+}
+
+.feedback__title,
+.feedback__desc {
+    margin-left: auto;
+    margin-right: auto;
+}
+.feedback__desc {
+    margin-top: 18px;
+    width: 37.2%;
+    color: var(--gray);
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.feedback__list {
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.feedback-item {
+    width: 48.7%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-item__quote {
+    position: relative;
+    padding: 42px 28px;
+    color: var(--gray);
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
+    background: #fff;
+    border: 1px solid #DFE2E8;
+}
+
+.feedback-item__quote::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -118px;
+    border: 60px solid;
+    border-color: #fff transparent transparent;
+}
+
+.feedback-item__quote:hover {
+    border: transparent;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.feedback-item__avatar {
+    margin-top: 96px;
+    object-fit: cover;
+    width: 104px;
+    height: 104px;
+    border-radius: 52px;
+    background: #4ab5e3;
+}
+
+.feedback-item:nth-child(even) .feedback-item__avatar {
+    background: #439f90;
+}
+
+.feedback-item__name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.feedback-item__job {
+    margin-top: 2px;
+    color: var(--gray);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.feedback__dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback__dot {
+    margin: 0px 6px;
+    width: 22px;
+    height: 6px;
+    border: 1px solid #9B9FAB;
+}
+
+.feedback__dot--active {
+    background: #7264D6;
+}
+
 /* ========== Blog ========== */
 /* ========== Download ========== */
 /* ========== Footer ========== */
