@@ -646,7 +646,7 @@ button {
     font-weight: 400;
     line-height: 1.54;
     background: #fff;
-    border: 1px solid #DFE2E8;
+    border: 1px solid #dfe2e8;
 }
 
 .feedback-item__quote::after {
@@ -703,14 +703,91 @@ button {
     margin: 0px 6px;
     width: 22px;
     height: 6px;
-    border: 1px solid #9B9FAB;
+    border: 1px solid #9b9fab;
 }
 
 .feedback__dot--active {
-    background: #7264D6;
+    background: #7264d6;
 }
 
 /* ========== Blog ========== */
+.blog {
+    padding: 80px 0;
+}
+
+.blog-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-top__content {
+    width: 37.2%;
+}
+
+.blog-top__desc {
+    margin-top: 18px;
+    color: var(--gray);
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.blog__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.blog-item {
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    background: #fff;
+    transition: border 0.25s;
+}
+
+.blog-item:hover {
+    border: transparent;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+}
+
+.blog-item__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+}
+
+.blog-item__time {
+    margin-top: 10px;
+    color: var(--gray);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.blog-item__heading {
+    margin-top: 10px;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.blog-item__cta {
+    display: block;
+    margin-top: 20px;
+    color: var(--gray);
+    font-weight: 400;
+    line-height: 1.625;
+}
+
+.blog-item__cta:hover {
+    color: #7264d6;
+}
 /* ========== Download ========== */
 /* ========== Footer ========== */
 /* ========== ========== */
