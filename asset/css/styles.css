@@ -52,6 +52,11 @@ button {
     font-weight: 600;
     line-height: 1.75;
     border-radius: 6px;
+    transition: opacity 0.25s;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .section-title {
@@ -90,6 +95,13 @@ button {
     line-height: 1.25;
 }
 
+@keyframes turnpurple {
+100% {
+    color: #7264D6;
+}
+}
+
+
 /* ========== Header ========== */
 .header {
     position: sticky;
@@ -124,6 +136,7 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
+    transition: text-shadow 0.25s;
 }
 
 .navbar__link:hover,
@@ -182,7 +195,8 @@ button {
 }
 
 .hero__heading--purple {
-    color: var(--primary-purple);
+    /* color: var(--primary-purple); */
+    animation: turnpurple 1s infinite;
 }
 
 .subscribe__form {
@@ -524,12 +538,14 @@ button {
 }
 
 .payment-income__text {
+    margin-top: 14px;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
 .payment-income__amount {
+    margin-top: 8px;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
@@ -646,7 +662,7 @@ button {
     font-weight: 400;
     line-height: 1.54;
     background: #fff;
-    border: 1px solid #dfe2e8;
+    filter: drop-shadow(0 0 1px #dfe2e8);
 }
 
 .feedback-item__quote::after {
@@ -747,7 +763,7 @@ button {
     border-radius: 12px;
     border: 1px solid #dfe2e8;
     background: #fff;
-    transition: border 0.25s;
+    transition: border 0.5s, box-shadow 0.5s;
 }
 
 .blog-item:hover {
@@ -790,6 +806,23 @@ button {
 }
 
 /* ========== Download ========== */
+@keyframes lds-circle {
+    0%,
+    100% {
+        animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+        animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 .download {
     margin: 80px 0;
 }
@@ -834,6 +867,10 @@ button {
 .download-google__icon {
     width: 182px;
     height: 64px;
+}
+
+.download__decor {
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 .download__decor:nth-of-type(1) {
@@ -894,6 +931,12 @@ button {
 .footer__column-link {
     display: block;
     margin-bottom: 12px;
+    transition: 0.25s;
+}
+
+.footer__column-link:hover {
+    text-shadow: 1px 0 0 #7264d6;
+    color: #7264d6;
 }
 
 .footer-form {
@@ -937,16 +980,20 @@ button {
 
 .footer__contact {
     margin-top: 54px;
+}
+
+.footer__email {
+    padding-right: 100px;
+}
+
+.footer__email,
+.footer__phone {
     color: #6a6e78;
     text-align: justify;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
-    text-decoration-line: underline;
-}
-
-.footer__email {
-    padding-right: 100px;
+    text-decoration: underline;
 }
 .footer__copyright {
     padding: 28px 0px;

@@ -26,6 +26,12 @@
             rel="stylesheet"
         />
 
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
         <!-- Favicon -->
         <link
             rel="apple-touch-icon"
@@ -111,7 +117,7 @@
                 <div class="header__inner">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="#!" class="logo__wrap">
+                        <a href="/" class="logo__wrap">
                             <img
                                 src="./asset/icon/logo.svg"
                                 alt="Logo"
@@ -174,7 +180,8 @@
                         </p>
                         <form action="" class="subscribe__form">
                             <input
-                                type="text"
+                                type="email"
+                                required
                                 class="subscribe__input"
                                 placeholder="Your email address"
                             />
@@ -237,7 +244,7 @@
                 <div class="container">
                     <div class="reward__inner">
                         <!-- Left part -->
-                        <div class="reward__media">
+                        <div class="reward__media wow animate_animated animate__zoomIn" data-wow-duration="2s">
                             <img
                                 src="./asset/img/reward-background.png"
                                 alt=""
@@ -273,7 +280,7 @@
                         </div>
 
                         <!-- Right part -->
-                        <div class="reward__content">
+                        <div class="reward__content wow animate_animated animate__zoomIn" data-wow-duration="2s">
                             <p class="section-title">Digital Smart Wallet</p>
                             <h2 class="reward__heading section-heading">
                                 How It Works
@@ -323,13 +330,13 @@
                 <div class="container">
                     <div class="payment__inner">
                         <!-- Left part -->
-                        <section class="payment__content">
+                        <section class="payment__content wow animate_animated animate__zoomIn" data-wow-duration="2s">
                             <p class="section-title">Digital Smart Wallet</p>
-                            <h2 class="section-heading">
+                            <h2 class="section-heading" data-wow-delay="0.5s">
                                 One Card For All Your Payments
                             </h2>
                             <p class="section-desc">
-                                We bring together eveything that’s required to
+                                We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
@@ -346,7 +353,7 @@
                         </section>
 
                         <!-- Right part -->
-                        <div class="payment__media">
+                        <div class="payment__media wow animate_animated animate__zoomIn" data-wow-duration="2s" >
                             <!-- Card -->
                             <img
                                 src="./asset/img/payment-card.png"
@@ -398,7 +405,7 @@
             <section class="anytime">
                 <div class="container">
                     <div class="anytime__inner">
-                        <div class="anytime__media">
+                        <div class="anytime__media wow animate_animated animate__zoomIn" data-wow-duration="2s">
                             <img
                                 src="./asset/img/anytime.png"
                                 alt=""
@@ -449,9 +456,9 @@
                                 class="anytime__card-icon"
                             />
                         </div>
-                        <section class="anytime__content">
+                        <section class="anytime__content wow animate_animated animate__zoomIn" data-wow-duration="2s">
                             <p class="section-title">Digital Smart Wallet</p>
-                            <h2 class="section-heading">
+                            <h2 class="section-heading" data-wow-delay="0.5s">
                                 Transfer and Deposite Your Money Anytime
                             </h2>
                             <p class="section-desc">
@@ -739,7 +746,7 @@
                 <div class="container">
                     <section class="download__inner">
                         <p class="section-title download__title">Our App</p>
-                        <h2 class="section-heading download__heading">
+                        <h2 class="section-heading download__heading wow animation_animated animate__bounceIn" data-wow-delay="0.5s">
                             Download the Apps
                         </h2>
                         <p class="download__desc">
@@ -800,7 +807,7 @@
                     <div class="footer__content">
                         <!-- Column 1 -->
                         <div class="logo">
-                            <a href="#!" class="logo__wrap">
+                            <a href="/" class="logo__wrap">
                                 <img
                                     src="./asset/icon/logo.svg"
                                     alt="Logo"
@@ -889,6 +896,7 @@
                                     <input
                                         id="email"
                                         type="email"
+                                        required
                                         class="footer-form__input"
                                         placeholder="Email address..."
                                     />
@@ -900,8 +908,8 @@
                         </div>
                     </div>
                     <div class="footer__contact">
-                        <span class="footer__email">email@gmail.com</span>
-                        <span class="footer__phone">(123) 456-7890</span>
+                        <a href="mailto:email@gmail.com" class="footer__email" >email@gmail.com</a>
+                        <a href="tel:(123)4567890" class="footer__phone">(123) 456-7890</a>
                     </div>
                 </div>
             </div>
@@ -909,5 +917,14 @@
                 © 2020 Ligft Media All rights reserved.
             </div>
         </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
